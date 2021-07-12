@@ -1,0 +1,493 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Git · 小远笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yuzhiyuan">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="markdown_help.html" />
+    
+    
+    <link rel="prev" href="Python.html" />
+    
+
+    
+        <link rel="shortcut icon" href='images/logo.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='images/logo.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='images/logo.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="images/logo.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="images/logo.ico">
+        
+    
+
+    <script src="gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Goland.html">
+            
+                <a href="Goland.html">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Python.html">
+            
+                <a href="Python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="git_help.html">
+            
+                <a href="git_help.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="markdown_help.html">
+            
+                <a href="markdown_help.html">
+            
+                    
+                    markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="YunWei.html">
+            
+                <a href="YunWei.html">
+            
+                    
+                    运维
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Git</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;"><b></b>Git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4ECB;&#x7ECD;"><b></b>&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#&#x5206;&#x652F;"><b></b>&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#&#x903B;&#x8F91;"><b></b>&#x903B;&#x8F91;</a></li><li><span class="title-icon "></span><a href="#&#x603B;&#x7ED3;"><b></b>&#x603B;&#x7ED3;</a></li></ul><li><span class="title-icon "></span><a href="#git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b></b>Git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;"><b></b>&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><b></b>&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><b></b>&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;"><b></b>&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;"><b></b>&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;</a></li><li><span class="title-icon "></span><a href="#&#x63D0;&#x4EA4;&#x66F4;&#x65B0;"><b></b>&#x63D0;&#x4EA4;&#x66F4;&#x65B0;</a></li></ul><li><span class="title-icon "></span><a href="#git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;"><b></b>Git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;"><b></b>&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x6587;&#x672C;"><b></b>&#x5220;&#x9664;&#x6587;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;"><b></b>&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;</a></li></ul><li><span class="title-icon "></span><a href="#git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;"><b></b>Git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;"><b></b>&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</a></li><li><span class="title-icon "></span><a href="#&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;"><b></b>&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;</a></li></ul><li><span class="title-icon "></span><a href="#git&#x5206;&#x652F;&#x64CD;&#x4F5C;"><b></b>Git&#x5206;&#x652F;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;"><b></b>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;"><b></b>&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x5206;&#x652F;"><b></b>&#x521B;&#x5EFA;&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#&#x5207;&#x6362;&#x5206;&#x652F;"><b></b>&#x5207;&#x6362;&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x5206;&#x652F;"><b></b>&#x5220;&#x9664;&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;"><b></b>&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;</a></li></ul><li><span class="title-icon "></span><a href="#git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><b></b>Git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;"><b></b>&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;"><b></b>&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;"><b></b>&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;</a></li><li><span class="title-icon "></span><a href="#submodule&#x4F7F;&#x7528;"><b></b>Submodule&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;"><b></b>&#x521B;&#x5EFA;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x8F7D;"><b></b>&#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x6539;"><b></b>&#x4FEE;&#x6539;</a></li></ul></ul></div><a href="#git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>[toc]</p>
+<h1 id="git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;"><a name="git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;" class="plugin-anchor" href="#git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x7684;&#x64CD;&#x4F5C;&#x539F;&#x7406;</h1>
+<h2 id="&#x4ECB;&#x7ECD;"><a name="&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4ECB;&#x7ECD;" class="plugin-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x7ECD;</h2>
+<p>&#x4E00;&#x4E2A;gitlib&#x670D;&#x52A1;&#x5668;&#x6709;&#x8FDC;&#x7A0B;&#x7684;&#x5206;&#x652F;&#x4EE5;&#x53CA;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x64CD;&#x4F5C;&#xFF0C;&#x9996;&#x5148;&#x662F;&#x4ECE;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x5C06;&#x6570;&#x636E;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3001;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#xFF0C;&#x968F;&#x540E;&#x5728;&#x672C;&#x5730;&#x7684;&#x5206;&#x652F;&#x4E2D;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6DFB;&#x52A0;&#x6682;&#x5B58;&#x63D0;&#x4EA4;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x518D;&#x5C06;&#x5206;&#x652F;&#x63A8;&#x9001;&#x4E0A;&#x4F20;&#x5230;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6700;&#x540E;&#x8FDB;&#x884C;&#x591A;&#x5206;&#x652F;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#x3002;</p>
+<h2 id="&#x5206;&#x652F;"><a name="&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5206;&#x652F;" class="plugin-anchor" href="#&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x652F;</h2>
+<p>&#x5BF9;&#x4E8E;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x652F;&#x90FD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x4FEE;&#x6539;&#x8FDB;&#x5EA6;&#xFF0C;&#x4F46;&#x6700;&#x540E;&#x90FD;&#x8981;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#xFF0C;&#x5408;&#x5E76;&#x5230;&#x4E3B;&#x7EBF;&#x4E2D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;master&#x5206;&#x652F;&#xFF0C;&#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x6709;push&#x9650;&#x5236;&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x8FDB;&#x884C;push&#x8986;&#x76D6;&#x64CD;&#x4F5C;&#xFF0C;&#x53EA;&#x53EF;&#x4EE5;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x5730;git&#x4ED3;&#x5E93;&#x4E2D;&#xFF0C;HEAD&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x4ED6;&#x6307;&#x7684;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x5728;&#x4E0D;&#x5177;&#x4F53;&#x7684;&#x6307;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5168;&#x90E8;&#x662F;&#x5728;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="&#x903B;&#x8F91;"><a name="&#x903B;&#x8F91;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x903B;&#x8F91;" class="plugin-anchor" href="#&#x903B;&#x8F91;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x903B;&#x8F91;</h2>
+<p>&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x5206;&#x652F; --&gt; &#x672C;&#x5730;&#x6587;&#x4EF6;&#x4FEE;&#x6539; --&gt; &#x672C;&#x5730;&#x6682;&#x5B58;&#x5E76;&#x63D0;&#x4EA4; --&gt; &#x4E0A;&#x4F20;&#x5230;&#x8FDC;&#x7AEF;&#x5E76;&#x8BF7;&#x6C42;&#x5408;&#x5E76; --&gt; &#x8FDC;&#x7AEF;&#x5408;&#x5E76;&#x5206;&#x652F;</p>
+<h2 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x603B;&#x7ED3;" class="plugin-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x603B;&#x7ED3;</h2>
+<p>&#x7528;&#x6237;&#x5728;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x5728;&#x8FDC;&#x7AEF;&#x5F00;&#x521B;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x64CD;&#x4F5C;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7AEF;&#xFF0C;&#x8FDC;&#x7AEF;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x6574;&#x5408;&#xFF0C;&#x6700;&#x540E;&#x56DE;&#x5F52;&#x4E3B;&#x7EBF;&#x3002;</p>
+<h1 id="git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;"><a name="&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;" class="anchor-navigation-ex-anchor" href="#&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;" class="plugin-anchor" href="#&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x514B;&#x9686;&#x8FDC;&#x7AEF;&#x7684;git&#x4ED3;&#x5E93;&#x5230;&#x672C;&#x5730;</h2>
+<pre class="language-"><code>  git clone .../*.git
+</code></pre><p>&#x8FD9;&#x4E00;&#x822C;&#x662F;&#x7B2C;&#x4E00;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x628A;&#x8FDC;&#x7AEF;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x5230;&#x672C;&#x5730;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x3002;</p>
+<h2 id="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><a name="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;</h2>
+<pre class="language-"><code>  git status
+</code></pre><p>&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#xFF0C;&#x4EE3;&#x8868;&#x53D1;&#x73B0;&#x6709;&#x4E2A;&#x672A;&#x6682;&#x5B58;&#x672C;&#x5730;&#x7684;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code>Untracked files:
+  (use &quot;git add <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span><span class="token punctuation">&gt;</span></span>...&quot; to include in what will be committed)
+</code></pre><p>&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#xFF0C;&#x4EE3;&#x8868;&#x53D1;&#x73B0;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x6682;&#x5B58;&#x5230;&#x672C;&#x5730;&#x4E86;</p>
+<pre class="language-"><code>Changes to be committed:
+  (use &quot;git rm --cached <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span><span class="token punctuation">&gt;</span></span>...&quot; to unstage)
+</code></pre><h2 id="&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><a name="&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;" class="plugin-anchor" href="#&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x72B6;&#x6001;</h2>
+<pre class="language-"><code>  git status -s
+</code></pre><p>&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF1A;
+&#x770B;&#x5230;<code>??</code>&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x672C;&#xFF0C;&#x8FD8;&#x6CA1;&#x6709;&#x6682;&#x5B58;&#x672C;&#x5730;&#x5206;&#x652F;&#x3002;
+&#x770B;&#x5230;<code>A</code>&#x4EE3;&#x8868;&#x5DF2;&#x7ECF;&#x6682;&#x5B58;&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x63D0;&#x4EA4;&#x3002;
+&#x770B;&#x5230;<code>M</code>&#x8BF4;&#x660E;&#x6CA1;&#x6709;&#x6682;&#x5B58;&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#x3002;
+&#x770B;&#x5230;<code>D</code>&#x8BF4;&#x660E;&#x6587;&#x4EF6;&#x4EE5;&#x53CA;&#x88AB;&#x5220;&#x9664;&#x6216;&#x88AB;&#x79FB;&#x5230;&#x5206;&#x652F;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x5916;&#x3002;
+&#x770B;&#x5230;<code>R</code>&#x8BF4;&#x660E;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x4E86;&#x4F4D;&#x7F6E;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x4E86;&#x540D;&#x5B57;
+&#x5982;&#x679C;&#x6709;<code>AM</code>&#x90A3;&#x4E48;&#x8BF4;&#x660E;&#x662F;&#x6682;&#x5B58;&#x540E;&#x53C8;&#x53D1;&#x751F;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x6B21;&#x6682;&#x5B58;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;"><a name="&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;" class="plugin-anchor" href="#&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x548C;&#x53D6;&#x6D88;</h2>
+<pre class="language-"><code>git add &#x6587;&#x4EF6;&#x540D;     ## &#x5C06;&#x6587;&#x4EF6;&#x6682;&#x5B58;
+git reset &#x6587;&#x4EF6;&#x540D;   ## &#x53D6;&#x6D88;&#x6587;&#x4EF6;&#x7684;&#x6682;&#x5B58;
+</code></pre><p>&#x6587;&#x4EF6;&#x6682;&#x5B58;&#x662F;&#x6BCF;&#x6B21;&#x5FC5;&#x987B;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x90FD;&#x9700;&#x8981;&#x5148;&#x6682;&#x5B58;&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;"><a name="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x60C5;&#x51B5;</h2>
+<p>&#x67E5;&#x770B;&#x6CA1;&#x6709;&#x6682;&#x5B58;&#x5230;&#x672C;&#x5730;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x73B0;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x6709;&#x54EA;&#x4E9B;&#x4FEE;&#x6539;&#x7684;&#x90E8;&#x5206;</p>
+<pre class="language-"><code>  git diff
+</code></pre><p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6682;&#x5B58;&#x5230;&#x672C;&#x5730;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x8FDC;&#x7AEF;&#x5B58;&#x50A8;&#x7684;&#x539F;&#x4EF6;&#x6709;&#x54EA;&#x4E9B;&#x4FEE;&#x6539;&#x90E8;&#x5206;</p>
+<pre class="language-"><code>git diff --staged
+</code></pre><h2 id="&#x63D0;&#x4EA4;&#x66F4;&#x65B0;"><a name="&#x63D0;&#x4EA4;&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#&#x63D0;&#x4EA4;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x63D0;&#x4EA4;&#x66F4;&#x65B0;" class="plugin-anchor" href="#&#x63D0;&#x4EA4;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63D0;&#x4EA4;&#x66F4;&#x65B0;</h2>
+<p>&#x8FD9;&#x662F;&#x5C06;&#x6587;&#x4EF6;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x78C1;&#x76D8;&#x5B8C;&#x6210;&#x5B58;&#x50A8;</p>
+<pre class="language-"><code>git commit -m &apos;&#x63D0;&#x4EA4;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&apos;
+</code></pre><p>&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7; add &#x6B65;&#x9AA4;&#xFF0C;&#x76F4;&#x63A5;&#x7F16;&#x8F91;&#x6587;&#x4EF6;&#x540E;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;</p>
+<pre class="language-"><code>git commit -m &apos;&#x63D0;&#x4EA4;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&apos; -a
+</code></pre><p>&#x6DFB;&#x52A0;&#x540E;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x6587;&#x4EF6;&#x72B6;&#x6001;&#x6CA1;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x5DF2;&#x7ECF;&#x5B58;&#x5230;&#x78C1;&#x76D8;&#x4E2D;&#x4E86;&#x3002;</p>
+<h1 id="git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;"><a name="git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;" class="anchor-navigation-ex-anchor" href="#git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;" class="plugin-anchor" href="#git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;</h1>
+<p>&#x589E;&#x5220;&#x6539;&#x90FD;&#x5C5E;&#x4E8E;&#x4FEE;&#x6539;&#x6587;&#x672C;&#xFF0C;&#x8D60;&#x5305;&#x62EC;&#x65B0;&#x5EFA;&#x6587;&#x672C;&#x3001;&#x6587;&#x672C;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x5220;&#x5305;&#x62EC;&#x5220;&#x9664;&#x6587;&#x672C;&#x3001;&#x5220;&#x9664;&#x6587;&#x672C;&#x5185;&#x5BB9;&#xFF0C;&#x6539;&#x5305;&#x62EC;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x4F4D;&#x7F6E;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x5728;&#x6B64;&#x63D0;&#x9192;&#x4E00;&#x4E2A;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF0C;&#x5728;&#x4FEE;&#x6539;&#x4E86;git&#x5206;&#x652F;&#x7684;&#x64CD;&#x4F5C;&#x540E;&#x5FC5;&#x987B;&#x8981;&#x63D0;&#x4EA4;&#xFF0C;&#x53EA;&#x6709;&#x5F53;<code>status</code>&#x6CA1;&#x6709;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x624D;&#x7B97;&#x5199;&#x5B8C;&#x4E86;&#x3002;</p>
+<h2 id="&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;"><a name="&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;" class="plugin-anchor" href="#&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x589E;&#x5220;&#x6539;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3001;&#x65B0;&#x5EFA;&#x6587;&#x672C;</h2>
+<p>&#x4FEE;&#x6539;&#x5B8C;&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x6682;&#x5B58;<code>add</code>&#x672C;&#x5730;&#xFF0C;&#x518D;&#x63D0;&#x4EA4;<code>commit</code>&#x5230;&#x672C;&#x5730;&#x5206;&#x652F;&#x3002;</p>
+<h2 id="&#x5220;&#x9664;&#x6587;&#x672C;"><a name="&#x5220;&#x9664;&#x6587;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x6587;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5220;&#x9664;&#x6587;&#x672C;" class="plugin-anchor" href="#&#x5220;&#x9664;&#x6587;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x6587;&#x672C;</h2>
+<p>&#x5220;&#x9664;&#x672C;&#x5730;&#x6587;&#x672C;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0;<code>status</code>&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x6784;&#x662F; D &#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x4ECE;git&#x4F53;&#x7CFB;&#x4E2D;&#x5220;&#x9664;</p>
+<pre class="language-"><code>git rm &#x6587;&#x4EF6;&#x540D;
+git rm -f &#x6587;&#x4EF6;&#x540D;   ## &#x5C06;&#x6682;&#x5B58;&#x533A;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E5F;&#x4F1A;&#x5220;&#x9664;
+</code></pre><p>&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#xFF0C;&#x4EE5;&#x53CA;&#x91CD;&#x547D;&#x540D;&#x90FD;&#x4F1A;&#x5F53;&#x505A;&#x662F;&#x5220;&#x9664;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x672C;&#xFF0C;git&#x4E2D;&#x79FB;&#x52A8;&#x6587;&#x4EF6;&#x548C;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x4EA7;&#x51FA;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>git rm &#x6587;&#x4EF6;</code>&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;&#x672C;&#x5730;&#x6587;&#x4EF6;&#xFF0C;&#x548C;git&#x672C;&#x5730;&#x5206;&#x652F;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x88AB;&#x5220;&#x9664;</p>
+<h2 id="&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;"><a name="&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;" class="plugin-anchor" href="#&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3001;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;</h2>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x6839;&#x636E;linux&#x7684;&#x64CD;&#x4F5C;&#x7279;&#x70B9;&#xFF0C;&#x79FB;&#x52A8;&#x6587;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x79FB;&#x52A8;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x8FD9;&#x6837;&#x4E5F;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x540D;&#xFF0C;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;</p>
+<pre class="language-"><code>git mv &#x539F;&#x6587;&#x4EF6;&#x5730;&#x5740;/&#x540D;&#x5B57;  &#x65B0;&#x6587;&#x4EF6;&#x5730;&#x5740;/&#x540D;&#x5B57;
+git commit -m &apos;&#x63D0;&#x4EA4;&#x4FEE;&#x6539;&#x4F4D;&#x7F6E;(&#x540D;&#x5B57;)&apos;
+</code></pre><h1 id="git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;"><a name="git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;" class="plugin-anchor" href="#git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x67E5;&#x770B;&#x5386;&#x53F2;&#x6D88;&#x606F;</h1>
+<h2 id="&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;"><a name="&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;</h2>
+<pre class="language-"><code>git log
+git log -p  ## &#x663E;&#x793A;&#x5386;&#x53F2;&#x63D0;&#x4EA4;&#x5BF9;&#x6587;&#x4EF6;&#x7684;&#x53D8;&#x5316;&#x60C5;&#x51B5;
+git log -p -&#x6570;&#x5B57;n    ## &#x67E5;&#x770B;&#x6700;&#x8FD1;&#x7684;n&#x6B21;&#x63D0;&#x4EA4;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#x60C5;&#x51B5;
+</code></pre><p> &#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x652F;&#x7684;&#x63D0;&#x4EA4;&#x5386;&#x53F2; (&#x6CE8;&#x610F;&#x6700;&#x65B0;&#x7684;&#x63D0;&#x4EA4;&#x5728;&#x4E0A;&#x9762;)</p>
+<pre class="language-"><code>git log --oneline --decorate --graph --all
+</code></pre><h2 id="&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;"><a name="&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x884C;&#x64A4;&#x9500;&#x64CD;&#x4F5C;</h2>
+<pre class="language-"><code>git reset HEAD &#x6587;&#x4EF6;     ## &#x5C06;&#x4E0A;&#x4E00;&#x6B21;&#x7684;git&#x64CD;&#x4F5C;&#x64A4;&#x56DE;
+git checkout -- &#x6587;&#x4EF6;   ## &#x771F;&#x6B63;&#x5BF9;&#x6587;&#x4EF6;&#x6709;&#x4F5C;&#x7528;&#x7684;&#x64A4;&#x9500;&#x64CD;&#x4F5C;
+</code></pre><p>&#x8FD9;&#x91CC;&#x5EFA;&#x8BAE;&#xFF0C;&#x901A;<code>git status</code>&#x67E5;&#x770B;&#x8BE5;&#x5982;&#x4F55;&#x64A4;&#x9500;&#xFF0C;&#x4E00;&#x822C;&#x5728;&#x6587;&#x4EF6;&#x4E0A;&#x65B9;&#x90FD;&#x4F1A;&#x5199;&#x5982;&#x4F55;&#x64A4;&#x9500;&#x8BE5;&#x64CD;&#x4F5C;</p>
+<h1 id="git&#x5206;&#x652F;&#x64CD;&#x4F5C;"><a name="git&#x5206;&#x652F;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#git&#x5206;&#x652F;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="git&#x5206;&#x652F;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#git&#x5206;&#x652F;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x5206;&#x652F;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;"><a name="&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;</h2>
+<pre class="language-"><code>git branch
+</code></pre><p>* + &#x7EFF;&#x8272;&#x5B57;&#x4F53; &#x7684;&#x90A3;&#x4E2A;&#x5206;&#x652F;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;</p>
+<h2 id="&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;"><a name="&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x540C;&#x6B65;&#x60C5;&#x51B5;</h2>
+<pre class="language-"><code>git branch -vv
+</code></pre><p>&#x67E5;&#x770B;&#x6BCF;&#x4E2A;&#x5206;&#x652F;&#x73B0;&#x5728;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x8FDC;&#x7AEF;&#x7684;&#x6587;&#x4EF6;&#x4F7F;&#x7528;<code>git pull origin master</code></p>
+<h2 id="&#x521B;&#x5EFA;&#x5206;&#x652F;"><a name="&#x521B;&#x5EFA;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x521B;&#x5EFA;&#x5206;&#x652F;" class="plugin-anchor" href="#&#x521B;&#x5EFA;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x5206;&#x652F;</h2>
+<pre class="language-"><code>git branch &#x5206;&#x652F;&#x540D;        ## &#x6CE8;&#x610F;&#x8FD9;&#x53EA;&#x662F;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4E0D;&#x4F1A;&#x5207;&#x6362;&#x5206;&#x652F;
+git checkout -b &#x5206;&#x652F;&#x540D;   ## &#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5206;&#x652F;&#x5E76;&#x4E14;&#x5207;&#x6362;&#x5230;&#x65B0;&#x5206;&#x652F;
+</code></pre><h2 id="&#x5207;&#x6362;&#x5206;&#x652F;"><a name="&#x5207;&#x6362;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x5207;&#x6362;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5207;&#x6362;&#x5206;&#x652F;" class="plugin-anchor" href="#&#x5207;&#x6362;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5207;&#x6362;&#x5206;&#x652F;</h2>
+<pre class="language-"><code>git checkout &#x5206;&#x652F;&#x540D;
+</code></pre><p>&#x8FD9;&#x5C31;&#x662F;&#x5C06;HEAD&#x6307;&#x9488;&#x6307;&#x5411;&#x65B0;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x4E0B;&#x9762;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x5BF9;&#x8BE5;&#x5206;&#x652F;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;</p>
+<h2 id="&#x5220;&#x9664;&#x5206;&#x652F;"><a name="&#x5220;&#x9664;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5220;&#x9664;&#x5206;&#x652F;" class="plugin-anchor" href="#&#x5220;&#x9664;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x5206;&#x652F;</h2>
+<pre class="language-"><code>git branch -d &#x5206;&#x652F;&#x540D;
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x91CC;&#x5220;&#x9664;&#x5206;&#x652F;&#x7684;&#x524D;&#x63D0;&#x5FC5;&#x987B;&#x662F;&#xFF0C;&#x8BE5;&#x5206;&#x652F;&#x5DF2;&#x7ECF;&#x5408;&#x5E76;&#x5230;&#x4E86;master&#x4E2D;</p>
+<h2 id="&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;"><a name="&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;" class="plugin-anchor" href="#&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6307;&#x5B9A;&#x5206;&#x652F;&#x8DDF;&#x8E2A;</h2>
+<p>&#x5F53;&#x514B;&#x9686;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x65F6;&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8DDF;&#x8E2A;<code>origin/master</code>&#x7684;<code>master</code>&#x5206;&#x652F;</p>
+<pre class="language-"><code>git checkout -b &#x521B;&#x5EFA;&#x5230;&#x672C;&#x5730;&#x7684;&#x5206;&#x652F; origin/&#x8FDC;&#x7A0B;&#x5206;&#x652F;
+</code></pre><p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x5206;&#x652F;&#xFF0C;&#x4E00;&#x76F4;&#x8DDF;&#x8E2A;&#x4E00;&#x4E2A;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#xFF0C;&#x8FD9;&#x4E2A;&#x7684;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;<code>git pull</code>&#x540E;&#x9762;&#x4E0D;&#x7528;&#x8DDF;&#x53C2;&#x6570;&#x4E86;&#x800C;&#x5DF2;</p>
+<h1 id="git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><a name="git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x8FDC;&#x7AEF;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;"><a name="&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;</h2>
+<pre class="language-"><code>git remote -v
+git remote show origin    ## &#x67E5;&#x770B;&#x5F53;&#x524D;&#x5982;&#x679C;&#x548C;&#x8FDC;&#x7AEF;&#x8FDB;&#x884C;&#x63A8;&#x9001;&#x3001;&#x62C9;&#x53D6;&#x7B49;&#x64CD;&#x4F5C;&#x7684;&#x7F29;&#x5199;&#x547D;&#x4EE4;&#x7684;&#x542B;&#x4E49;
+</code></pre><h2 id="&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;"><a name="&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;" class="plugin-anchor" href="#&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7AEF;&#x5206;&#x652F;</h2>
+<pre class="language-"><code>git push origin  master:&#x5206;&#x652F;&#x540D;
+</code></pre><h2 id="&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;"><a name="&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;" class="plugin-anchor" href="#&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C06;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x540C;&#x6B65;&#x5230;&#x672C;&#x5730;</h2>
+<pre class="language-"><code>git pull origin master(&#x6216;&#x8005;&#x5176;&#x4ED6;&#x5206;&#x652F;)
+</code></pre><p>&#x4E00;&#x822C;&#x540C;&#x6B65;&#x6570;&#x636E;&#x90FD;&#x662F;&#x540C;&#x6B65;master&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</p>
+<h2 id="submodule&#x4F7F;&#x7528;"><a name="submodule&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#submodule&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="submodule&#x4F7F;&#x7528;" class="plugin-anchor" href="#submodule&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Submodule&#x4F7F;&#x7528;</h2>
+<h2 id="&#x521B;&#x5EFA;"><a name="&#x521B;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x521B;&#x5EFA;" class="plugin-anchor" href="#&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;</h2>
+<pre class="language-"><code class="lang-shell">git submodule add https://URL
+</code></pre>
+<h2 id="&#x4E0B;&#x8F7D;"><a name="&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E0B;&#x8F7D;" class="plugin-anchor" href="#&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x8F7D;</h2>
+<pre class="language-"><code class="lang-shell">git submodule init
+git submodule update
+</code></pre>
+<h2 id="&#x4FEE;&#x6539;"><a name="&#x4FEE;&#x6539;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4FEE;&#x6539;" class="plugin-anchor" href="#&#x4FEE;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;</h2>
+<pre class="language-"><code class="lang-shell">vim .gitsubmodule
+vim .git/config
+git submodule sync
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Python.html" class="navigation navigation-prev " aria-label="Previous page: Python">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="markdown_help.html" class="navigation navigation-next " aria-label="Next page: markdown">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.4","depth":1,"next":{"title":"markdown","level":"1.5","depth":1,"path":"markdown_help.md","ref":"markdown_help.md","articles":[]},"previous":{"title":"Python","level":"1.3","depth":1,"path":"Python.md","ref":"Python.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","hide-element","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","insert-logo","ace","copy-code-button","anchor-navigation-ex","autotheme","favicon","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnNote"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"images/logo.ico","bookmark":"images/logo.ico","appleTouch":"images/logo.ico","appleTouchMore":{"120x120":"images/logo.ico","180x180":"images/logo.ico"}},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[21,22,23,0,1,2,3,4,4,5],"sepia":[5,7,8,17,18,19],"white":[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 30px","url":"https://smartlyu.github.io/LearnNote/images/logo.png"},"search-plus":{}},"theme":"default","author":"yuzhiyuan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小远笔记","language":"zh-hans","gitbook":"*","description":"记录学习中的知识点"},"file":{"path":"git_help.md","mtime":"2021-07-12T09:23:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-12T10:24:46.998Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-autotheme/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

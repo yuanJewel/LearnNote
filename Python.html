@@ -1,0 +1,434 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python · 小远笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yuzhiyuan">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="git_help.html" />
+    
+    
+    <link rel="prev" href="Goland.html" />
+    
+
+    
+        <link rel="shortcut icon" href='images/logo.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='images/logo.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='images/logo.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="images/logo.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="images/logo.ico">
+        
+    
+
+    <script src="gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Goland.html">
+            
+                <a href="Goland.html">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Python.html">
+            
+                <a href="Python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="git_help.html">
+            
+                <a href="git_help.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="markdown_help.html">
+            
+                <a href="markdown_help.html">
+            
+                    
+                    markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="YunWei.html">
+            
+                <a href="YunWei.html">
+            
+                    
+                    运维
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x603B;&#x7EB2;"><b></b>&#x603B;&#x7EB2;</a></li><li><span class="title-icon "></span><a href="#&#x53D8;&#x91CF;"><b></b>&#x53D8;&#x91CF;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5168;&#x5C40;&#x53D8;&#x91CF;"><b></b>&#x5168;&#x5C40;&#x53D8;&#x91CF;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x5178;"><b></b>&#x5B57;&#x5178;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;"><b></b>&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;</a></li><ul><li><span class="title-icon "></span><a href="#&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;"><b></b>&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;"><b></b>&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;</a></li></ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;"><b></b>&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x7279;&#x6B8A;&#x7528;&#x6CD5;"><b></b>&#x7279;&#x6B8A;&#x7528;&#x6CD5;</a></li></ul></div><a href="#&#x603B;&#x7EB2;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x603B;&#x7EB2;"><a name="&#x603B;&#x7EB2;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7EB2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x603B;&#x7EB2;" class="plugin-anchor" href="#&#x603B;&#x7EB2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x603B;&#x7EB2;</h1>
+<p>python&#x548C;yaml&#x6587;&#x4EF6;&#x6709;&#x4E9B;&#x7C7B;&#x4F3C;&#xFF0C;&#x7F29;&#x8FDB;&#x4E25;&#x683C;&#x5BF9;&#x9F50;&#xFF0C;&#x5BF9;&#x4E8E;&#x5FAA;&#x73AF;&#x5224;&#x65AD;&#x7684;&#x63A7;&#x5236;&#x5F71;&#x54CD;&#x8303;&#x56F4;&#x5C31;&#x662F;&#x6839;&#x636E;&#x7A7A;&#x683C;&#x7F29;&#x8FDB;&#xFF0C;&#x4E00;&#x4E2A;&#x7F29;&#x8FDB;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x7EA7;&#x522B;&#x3002;</p>
+<h1 id="&#x53D8;&#x91CF;"><a name="&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53D8;&#x91CF;" class="plugin-anchor" href="#&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF;</h1>
+<pre class="language-"><code>&#x53D8;&#x91CF;&#x540D; = &#x53D8;&#x91CF;&#x503C;
+</code></pre><p>&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x76F4;&#x63A5;&#x7528;&#x53D8;&#x91CF;&#x540D;&#x4EE3;&#x8868;&#x5373;&#x53EF;</p>
+<h2 id="&#x5168;&#x5C40;&#x53D8;&#x91CF;"><a name="&#x5168;&#x5C40;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5168;&#x5C40;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5168;&#x5C40;&#x53D8;&#x91CF;" class="plugin-anchor" href="#&#x5168;&#x5C40;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x5C40;&#x53D8;&#x91CF;</h2>
+<pre class="language-"><code>global &#x53D8;&#x91CF;&#x540D;
+</code></pre><p>&#x4E3B;&#x8981;&#x662F;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x8BA9;&#x51FD;&#x6570;&#x4E2D;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x53EF;&#x4EE5;&#x5728;&#x51FD;&#x6570;&#x5916;&#x4F7F;&#x7528;</p>
+<h2 id="&#x5B57;&#x5178;"><a name="&#x5B57;&#x5178;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x5178;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B57;&#x5178;" class="plugin-anchor" href="#&#x5B57;&#x5178;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x5178;</h2>
+<pre class="language-"><code>{&apos;key&#x540D;1&apos;: &apos;&#x5177;&#x4F53;&#x503C;1&apos; &#xFF0C;&apos;key&#x540D;2&apos;: &apos;&#x5177;&#x4F53;&#x503C;2&apos; }
+
+# &#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;
+&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;d &#x5B58;&#x50A8;&#x8FD9;&#x4E9B;&#x5B57;&#x5178;&#x503C;&#xFF0C;&#x5728;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;
+d[key&#x540D;]&#x5C31;&#x662F;key&#x5BF9;&#x5E94;&#x7684;&#x5177;&#x4F53;&#x503C;
+</code></pre><p>&#x7C7B;&#x4F3C;json&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x683C;&#x5F0F;&#xFF0C;
+&#x4F7F;&#x7528;del&#x5220;&#x9664;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF1A;<code>del d[key&#x540D;]</code></p>
+<p>&#x5224;&#x65AD;key&#x540D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x81EA;&#x4F4E;&#x6602;&#x4E2D;&#xFF1A;<code>&quot;key&#x540D;&quot; in d</code></p>
+<h1 id="&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;"><a name="&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;" class="anchor-navigation-ex-anchor" href="#&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;" class="plugin-anchor" href="#&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAA;&#x73AF;&#x4E0E;&#x5224;&#x65AD;</h1>
+<pre class="language-"><code>if ( &#x5224;&#x65AD;&#x547D;&#x4EE4; ):
+   &#x6210;&#x529F;&#x540E;&#x6267;&#x884C;&#x7684;
+else:
+   &#x5931;&#x8D25;&#x540E;&#x6267;&#x884C;&#x7684;
+</code></pre><pre class="language-"><code>while &#x5224;&#x65AD; :
+   &#x6210;&#x529F;&#x540E;&#x6267;&#x884C;&#x7684;
+else:
+   &#x5931;&#x8D25;&#x540E;&#x6267;&#x884C;&#x7684;
+</code></pre><pre class="language-"><code>for i in &#x5217;&#x8868;:
+   i&#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x503C;&#x5E76;&#x6267;&#x884C;
+else:
+   i&#x53D6;&#x5B8C;&#x5217;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x503C;
+</code></pre><h2 id="&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;"><a name="&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;" class="plugin-anchor" href="#&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;&#x8FDE;&#x7EED;&#x6570;</h2>
+<pre class="language-"><code>rannge([&#x8D77;&#x59CB;&#x6570;&#x503C;,]&#x505C;&#x6B62;&#x6570;&#x503C;[,&#x6B65;&#x957F;])
+</code></pre><p>&#x8D77;&#x59CB;&#x6570;&#x503C;&#x4E0D;&#x4E00;&#x5B9A;&#x6BD4;&#x505C;&#x6B62;&#x6570;&#x503C;&#x5927;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x964D;&#x5E8F;&#x6392;&#x5217;&#xFF0C;
+&#x8D77;&#x59CB;&#x6570;&#x503C;&#x9ED8;&#x8BA4;&#x662F;0&#xFF0C;&#x6B65;&#x957F;&#x9ED8;&#x8BA4;&#x4E5F;&#x662F;0</p>
+<h2 id="&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;"><a name="&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;" class="anchor-navigation-ex-anchor" href="#&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;" class="plugin-anchor" href="#&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EC8;&#x65AD;&#x5FAA;&#x73AF;</h2>
+<pre class="language-"><code>continue &#x505C;&#x6B62;&#x672C;&#x6B21;&#x5FAA;&#x73AF;&#x7684;&#x540E;&#x7EED;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;&#x662F;&#x5FAA;&#x73AF;&#x4F9D;&#x65E7;&#x8FDB;&#x884C;
+break &#x672C;&#x6B21;&#x5FAA;&#x73AF;&#x7684;&#x540E;&#x7EED;&#x547D;&#x4EE4;&#xFF0C;&#x5E76;&#x505C;&#x6B62;&#x6240;&#x6709;&#x5FAA;&#x73AF;&#x64CD;&#x4F5C;
+</code></pre><h1 id="&#x51FD;&#x6570;"><a name="&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;</h1>
+<p>&#x5B9A;&#x4E49;&#x51FD;&#x6570;</p>
+<pre class="language-"><code>def &#x51FD;&#x6570;&#x540D;( &#x5F62;&#x53C2;1 = &#x9ED8;&#x8BA4;&#x503C; &#xFF0C;&#x5F62;&#x53C2;2 , *&#x4E0D;&#x5B9A;&#x957F;&#x5EA6;&#x5F62;&#x53C2; &#xFF0C; **&#x5B57;&#x5178;&#x5F0F;&#x5F62;&#x53C2; ) :
+    &#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;
+
+# &#x8C03;&#x7528;&#x65B9;&#x6CD5;
+&#x51FD;&#x6570;&#x540D;(&#x5B9E;&#x53C2;1&#xFF0C;&#x5B9E;&#x53C2;2,**{&quot;&#x5B57;&#x5178;&#x5F0F;&#x5B9E;&#x53C2;&#x540D;1&quot;:&quot;&#x5177;&#x4F53;&#x503C;1&quot;&#xFF0C;&quot;&#x5B57;&#x5178;&#x5F0F;&#x5B9E;&#x53C2;&#x540D;2&quot;:&quot;&#x5177;&#x4F53;&#x503C;2&quot;})
+&#x51FD;&#x6570;&#x540D;(*(&#x6240;&#x6709;&#x5B9E;&#x53C2;&#x7EC4;&#x6210;&#x7684;&#x5143;&#x7EC4;))
+</code></pre><ol>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BBE;&#x5B9A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x5B9E;&#x53C2;&#x4E2A;&#x6570;&#x5FC5;&#x987B;&#x548C;&#x5F62;&#x53C2;&#x4E2A;&#x6570;&#x5B8C;&#x5168;&#x4E00;&#x81F4;</li>
+<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x5C31;&#x8981;&#x5168;&#x90E8;&#x90FD;&#x8BBE;&#x5B9A;&#x9ED8;&#x8BA4;&#x503C;</li>
+<li>&#x6240;&#x6709;&#x5B9E;&#x53C2;&#x7EC4;&#x6210;&#x7684;&#x5143;&#x7EC4;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x8D4B;&#x503C;&#x540E;&#x653E;&#x5165;</li>
+<li>&#x4E0D;&#x5B9A;&#x957F;&#x5F62;&#x53C2;&#x4F1A;&#x83B7;&#x53D6;&#x9664;&#x53BB;&#x524D;&#x9762;&#x8BBE;&#x5B9A;&#x4E2A;&#x6570;&#x7684;&#x53C2;&#x6570;&#x5916;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x53C2;(&#x4E0D;&#x5305;&#x62EC;&#x5B57;&#x5178;&#x683C;&#x5F0F;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;)</li>
+</ol>
+<h1 id="&#x7279;&#x6B8A;&#x7528;&#x6CD5;"><a name="&#x7279;&#x6B8A;&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x6B8A;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7279;&#x6B8A;&#x7528;&#x6CD5;" class="plugin-anchor" href="#&#x7279;&#x6B8A;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7279;&#x6B8A;&#x7528;&#x6CD5;</h1>
+<pre class="language-"><code># &#x5148;&#x8C03;&#x7528;&#xFF0C;&#x518D;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x63A7;&#x5236;&#x65F6;&#x95F4;
+import time
+
+time.sleep(1)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Goland.html" class="navigation navigation-prev " aria-label="Previous page: Golang">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="git_help.html" class="navigation navigation-next " aria-label="Next page: Git">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.3","depth":1,"next":{"title":"Git","level":"1.4","depth":1,"path":"git_help.md","ref":"git_help.md","articles":[]},"previous":{"title":"Golang","level":"1.2","depth":1,"path":"Goland.md","ref":"Goland.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","code","click-reveal","prism","search-plus","hide-element","-sharing","sharing-plus","simple-page-toc","emphasize","graph","expandable-chapters-small","anchors","splitter","insert-logo","ace","copy-code-button","anchor-navigation-ex","autotheme","favicon","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"disqus":{"shortName":""},"emphasize":{},"ace":{},"github":{"url":"https://github.com/SmartLyu/LearnNote"},"simple-page-toc":{},"splitter":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"graph":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"serif","size":1},"click-reveal":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"images/logo.ico","bookmark":"images/logo.ico","appleTouch":"images/logo.ico","appleTouchMore":{"120x120":"images/logo.ico","180x180":"images/logo.ico"}},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[21,22,23,0,1,2,3,4,4,5],"sepia":[5,7,8,17,18,19],"white":[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"sharing":{"facebook":true,"twitter":true,"google":true,"qq":true,"qzone":true,"weibo":true,"all":["facebook","messenger","google","twitter","weibo","qq","linkedin","qzone","line"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 30px","url":"https://smartlyu.github.io/LearnNote/images/logo.png"},"search-plus":{}},"theme":"default","author":"yuzhiyuan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小远笔记","language":"zh-hans","gitbook":"*","description":"记录学习中的知识点"},"file":{"path":"Python.md","mtime":"2021-07-12T09:25:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-12T10:24:46.998Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-autotheme/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
